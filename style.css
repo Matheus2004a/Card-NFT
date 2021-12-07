@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    /* Colors primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Colors neutral */
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);--Very-dark-blue-line: hsl(215, 32%, 27%);--White: hsl(0, 0%, 100%);
+}
+
+.container{
+    width: 25rem;
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1% auto;
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 2rem 1.5rem;
+    border-radius: 5px;
+    opacity: 0.87;
+}
+
+.image-equilibrium{
+    width: 100%;
+    border-radius: 5px;
+}
+
+h2{
+    margin: 1.5rem 0;
+}
+
+.row-infos .info-ethereum{
+    color: var(--Cyan);
+}
+
+.paragraph-card{
+    font: normal 300 1.2rem Outfit;
+}
+
+.paragraph-card,.row-infos figcaption,.divider,footer span b,.attribution a{
+    color: var(--Soft-blue);
+}
+
+a{
+    text-decoration: none;
+}
+
+.row-infos{
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    padding: 1.5rem 0;
+}
+
+.row-infos,.row-infos figure,footer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer{
+    gap: 1rem;
+}
+
+footer img{
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+h2,footer span,.attribution{
+    color: var(--White);
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
