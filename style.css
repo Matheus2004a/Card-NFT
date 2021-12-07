@@ -28,9 +28,24 @@
     opacity: 0.87;
 }
 
+.image-equilibrium-container{
+    position: relative;
+}
+
+.icon-view{
+    display: none;
+    position: absolute;
+    top: 9rem;
+    right: 9rem;
+}
+
 .image-equilibrium{
     width: 100%;
     border-radius: 5px;
+}
+
+.image-equilibrium,h2,span{
+    transition: all 0.5s;
 }
 
 h2{
@@ -77,6 +92,16 @@ footer img{
 
 h2,footer span,.attribution{
     color: var(--White);
+}
+
+.image-equilibrium:hover{
+    cursor: pointer;
+    filter: brightness(90%) invert(80%) sepia(100%) saturate(800%) hue-rotate(150deg) contrast(85%);
+}
+
+h2:hover,footer span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .attribution a:hover{

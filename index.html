@@ -12,9 +12,14 @@
 <body>
   <div class="container">
     <main>
-      <figure>
-        <img src="/images/image-equilibrium.jpg" alt="image-equilibrium" class="image-equilibrium">
-      </figure>
+      <div class="image-equilibrium-container">
+        <figure>
+          <img src="/images/image-equilibrium.jpg" alt="image-equilibrium" class="image-equilibrium">
+        </figure>
+        <figure>
+          <img src="/images/icon-view.svg" alt="icon-view" class="icon-view">
+        </figure>
+      </div>
       <h2>
         Equilibrium #3429
       </h2>
@@ -49,6 +54,15 @@
       Coded by <a href="https://github.com/Matheus2004a" target="_blank">Matheus Aurélio</a>.
     </div>
   </div>
+
+  <script>
+    document.querySelector(".image-equilibrium").addEventListener("mouseover", () => {
+      document.querySelector(".icon-view").style.display = "block"
+    })
+    document.querySelector(".image-equilibrium").addEventListener("mouseout", () => {
+      document.querySelector(".icon-view").style.display = "none"
+    })
+  </script>
 </body>
 
 </html>
